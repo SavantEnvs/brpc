@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_hulu
+cmds:
+  - cmd: /mayhem/fuzz_hulu
+    libfuzzer: true
+    timeout: 15

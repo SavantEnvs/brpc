@@ -1,0 +1,9 @@
+project: savantenvs/brpc
+target: fuzz_rtmp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rtmp/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rtmp
+    libfuzzer: true
+    timeout: 15

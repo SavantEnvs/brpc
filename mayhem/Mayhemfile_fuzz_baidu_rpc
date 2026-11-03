@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_baidu_rpc
+cmds:
+  - cmd: /mayhem/fuzz_baidu_rpc
+    libfuzzer: true
+    timeout: 15

@@ -1,0 +1,9 @@
+project: savantenvs/brpc
+target: fuzz_hpack
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_hpack/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_hpack
+    libfuzzer: true
+    timeout: 15

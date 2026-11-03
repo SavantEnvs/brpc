@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_amf
+cmds:
+  - cmd: /mayhem/fuzz_amf
+    libfuzzer: true
+    timeout: 15

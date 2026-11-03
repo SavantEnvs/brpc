@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_mongo
+cmds:
+  - cmd: /mayhem/fuzz_mongo
+    libfuzzer: true
+    timeout: 15

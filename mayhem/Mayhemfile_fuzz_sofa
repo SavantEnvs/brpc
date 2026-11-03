@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_sofa
+cmds:
+  - cmd: /mayhem/fuzz_sofa
+    libfuzzer: true
+    timeout: 15

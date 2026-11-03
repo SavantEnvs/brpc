@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_http_parser
+cmds:
+  - cmd: /mayhem/fuzz_http_parser
+    libfuzzer: true
+    timeout: 15

@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_memcache
+cmds:
+  - cmd: /mayhem/fuzz_memcache
+    libfuzzer: true
+    timeout: 15

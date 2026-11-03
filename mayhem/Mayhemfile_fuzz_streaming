@@ -1,0 +1,6 @@
+project: savantenvs/brpc
+target: fuzz_streaming
+cmds:
+  - cmd: /mayhem/fuzz_streaming
+    libfuzzer: true
+    timeout: 15

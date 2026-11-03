@@ -1,0 +1,9 @@
+project: savantenvs/brpc
+target: fuzz_butil
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_butil/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_butil
+    libfuzzer: true
+    timeout: 15
